@@ -1,3 +1,7 @@
+:root {
+    --main-color: #10cab7
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -85,6 +89,7 @@ body {
     right: 0;
     min-width: 200px;
     display: none;
+    z-index: 10;
 }
 .header .links ul::before {
     content: "";
@@ -115,3 +120,35 @@ body {
 .header .links ul li:not(:last-child) a {
     border-block-end: 1px #ddd solid;
 }
+
+
+/* landing page */
+.landing{
+    background-image: url(../images/mountain.jpg);
+    background-size: cover;
+    height: calc(100vh - 64px);
+    position: relative;
+}
+
+.landing .intro-text {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+
+.landing .intro-text h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.landing .intro-text p {
+    font-size: 19px;
+    line-height: 1.8;
+}
+
