@@ -34,6 +34,30 @@ body {
     }
 }
 
+/* Repeated components */
+.special-heading {
+    color: #ebeced;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -3px;
+    margin: 0;
+}
+.special-heading + p {
+    margin-block-start: -30px;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+}
+@media (max-width: 767px) {
+    .special-heading {
+        font-size: 60px;
+    }
+    .special-heading + p {
+        margin-block-start: -15px;
+    }
+}
+
 /* Header styling */
 .header {
     padding: 20px;
